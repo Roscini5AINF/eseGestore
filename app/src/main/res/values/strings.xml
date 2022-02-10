@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">eseGestioneFile</string>
+    <string name="bLeggi">Leggi</string>
+    <string name="bScrivi">Scrivi</string>
+    <string name="edTxt">Cosa vuoi scrivere nel file</string>
+</resources>
