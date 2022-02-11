@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
         bLeggi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                g.leggiFile();
+                StringBuilder stb=new StringBuilder (1200);
+                stb= g.leggiFile();
+                String s="";
+                s= stb.toString ();
+                tvOut.setText (s);
             }
         });
 

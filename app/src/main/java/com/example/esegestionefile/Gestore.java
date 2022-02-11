@@ -19,7 +19,7 @@ public class Gestore {
         this.c=c;
     }
 
-    public void leggiFile(){
+    public StringBuilder leggiFile(){
         String str="";
         StringBuilder stb=new StringBuilder(1200);
         try {
@@ -33,6 +33,7 @@ public class Gestore {
         } catch (IOException e) {
             Toast.makeText(c.getApplicationContext(), "errore in lettura", Toast.LENGTH_SHORT).show();
         }
+        return stb;
     }
 
     public void scriviFile(String txt){
